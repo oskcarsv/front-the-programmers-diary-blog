@@ -11,7 +11,7 @@ function AppRoutes() {
   const routes = useRoutes(
     [
       { path: '/', element: <DashboardPage /> },
-      { path: '/posts', element: <PostPage /> },
+      { path: '/post', element: <PostPage /> },
     ]
   )
   return routes;

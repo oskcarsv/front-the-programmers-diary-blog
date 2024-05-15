@@ -22,7 +22,7 @@ export const DashboardPage = () => {
         </div>
         <div className="buttons">
           <button type="button" className="button">
-            <Link to="/posts">Posts</Link>
+            <Link to="/post">Posts</Link>
           </button>
         </div>
       </nav>

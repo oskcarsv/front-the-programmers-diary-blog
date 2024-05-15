@@ -2,15 +2,10 @@
 import "./postPage.css";
 import icon from "../../assets/icon.svg";
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { getPost } from "../../services/api";
 
 export const PostPage = () => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    getPost().then(setPosts);
-  }, []);
   return (
     <div className="container">
       <nav className="nav">
@@ -34,15 +29,9 @@ export const PostPage = () => {
       </nav>
 
       <section className="section-post">
-      {posts.map((post) => (
-        <Link to={`/post/${post._id}`} key={post._id} className="post-card">
-          <img src={post.img} alt={post.title} className="post-card-img" />
-          <h2 className="post-card-title">{post.title}</h2>
-        </Link>
-      ))}
-    </section>
+        
+      </section>
 
-    
       <footer className="footer">
         <div className="icon-text">
           <div className="icon">
