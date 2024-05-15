@@ -1,5 +1,7 @@
 import "./postPage.css";
-import icon from "../assets/icon.svg";
+import icon from "../../assets/icon.svg";
+import { Link } from 'react-router-dom';
+
 
 export const PostPage = () => {
   return (
@@ -19,10 +21,7 @@ export const PostPage = () => {
         </div>
         <div className="buttons">
           <button type="button" className="button">
-            Posts
-          </button>
-          <button type="button" className="button">
-            Home
+          <Link to="/">Home</Link>
           </button>
         </div>
       </nav>

@@ -3,6 +3,7 @@ import {
   useRoutes,
 } from 'react-router-dom';
 import { DashboardPage } from "./pages/dashboard/DashboardPage"
+import { PostPage } from "./pages/post/PostPage";
 
 
 
@@ -10,6 +11,7 @@ function AppRoutes() {
   const routes = useRoutes(
     [
       { path: '/', element: <DashboardPage /> },
+      { path: '/posts', element: <PostPage /> },
     ]
   )
   return routes;

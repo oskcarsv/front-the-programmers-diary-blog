@@ -49,6 +49,7 @@
 
 .section-community {
   background-color: #55A2FF;
+  height: 550px;
   padding: 50px;
   display: flex;
   justify-content: space-between;
@@ -72,6 +73,7 @@
 
 .section-share {
   background-color: #FF6622;
+  height: 550px;
   padding: 50px;
   display: flex;
   justify-content: space-between;

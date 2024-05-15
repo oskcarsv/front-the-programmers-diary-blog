@@ -2,6 +2,7 @@ import "./dashboardPage.css";
 import icon from "../../assets/icon.svg";
 import communityGift from "../../assets/people-gift.gif";
 import shareImg from "../../assets/watch.svg";
+import { Link } from 'react-router-dom';
 
 export const DashboardPage = () => {
   return (
@@ -21,10 +22,7 @@ export const DashboardPage = () => {
         </div>
         <div className="buttons">
           <button type="button" className="button">
-            Posts
-          </button>
-          <button type="button" className="button">
-            Home
+            <Link to="/posts">Posts</Link>
           </button>
         </div>
       </nav>
