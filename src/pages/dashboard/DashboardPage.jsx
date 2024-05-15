@@ -1,7 +1,7 @@
 import "./dashboardPage.css";
-import icon from "../../assets/icon.svg";
-import communityGift from "../../assets/people-gift.gif";
-import shareImg from "../../assets/watch.svg";
+import icon from "../../assets/img/icon.svg";
+import communityGift from "../../assets/img/people-gift.gif";
+import shareImg from "../../assets/img/watch.svg";
 import { Link } from 'react-router-dom';
 
 export const DashboardPage = () => {

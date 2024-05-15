@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import "./postPage.css";
-import icon from "../../assets/icon.svg";
+import icon from "../../assets/img/icon.svg";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { getPost } from "../../services/api";
