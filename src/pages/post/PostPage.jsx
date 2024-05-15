@@ -1,9 +1,16 @@
+/* eslint-disable no-unused-vars */
 import "./postPage.css";
 import icon from "../../assets/icon.svg";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { getPost } from "../../services/api";
 
 export const PostPage = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    getPost().then(setPosts);
+  }, []);
   return (
     <div className="container">
       <nav className="nav">
@@ -16,17 +23,26 @@ export const PostPage = () => {
             />{" "}
           </div>
           <div className="text">
-            <h1 className="tittle-h1">The programmer's diary</h1>
+            <h1 className="tittle-h1">The programmers diary</h1>
           </div>
         </div>
         <div className="buttons">
           <button type="button" className="button">
-          <Link to="/">Home</Link>
+            <Link to="/">Home</Link>
           </button>
         </div>
       </nav>
 
+      <section className="section-post">
+      {posts.map((post) => (
+        <Link to={`/post/${post._id}`} key={post._id} className="post-card">
+          <img src={post.img} alt={post.title} className="post-card-img" />
+          <h2 className="post-card-title">{post.title}</h2>
+        </Link>
+      ))}
+    </section>
 
+    
       <footer className="footer">
         <div className="icon-text">
           <div className="icon">
@@ -37,12 +53,12 @@ export const PostPage = () => {
             />{" "}
           </div>
           <div className="text-footer">
-            <h1 className="tittle-h1-footer">The programmer's diary</h1>
+            <h1 className="tittle-h1-footer">The programmers diary</h1>
           </div>
         </div>
 
         <div className="copyright-text">
-          <p className="text-footer">©The programmer's diary 2024</p>
+          <p className="text-footer">©The programmers diary 2024</p>
         </div>
       </footer>
     </div>

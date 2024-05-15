@@ -17,7 +17,7 @@ export const DashboardPage = () => {
             />{" "}
           </div>
           <div className="text">
-            <h1 className="tittle-h1">The programmer's diary</h1>
+            <h1 className="tittle-h1">The programmers diary</h1>
           </div>
         </div>
         <div className="buttons">
@@ -71,12 +71,12 @@ export const DashboardPage = () => {
             />{" "}
           </div>
           <div className="text-footer">
-            <h1 className="tittle-h1-footer">The programmer's diary</h1>
+            <h1 className="tittle-h1-footer">The programmers diary</h1>
           </div>
         </div>
 
         <div className="copyright-text">
-          <p className="text-footer">©The programmer's diary 2024</p>
+          <p className="text-footer">©The programmers diary 2024</p>
         </div>
       </footer>
     </div>
