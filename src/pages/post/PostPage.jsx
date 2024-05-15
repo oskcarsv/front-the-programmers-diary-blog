@@ -1,9 +1,7 @@
-import "./dashboardPage.css";
+import "./postPage.css";
 import icon from "../assets/icon.svg";
-import communityGift from "../assets/people-gift.gif";
-import shareImg from "../assets/watch.svg";
 
-export const DashboardPage = () => {
+export const PostPage = () => {
   return (
     <div className="container">
       <nav className="nav">
@@ -29,39 +27,6 @@ export const DashboardPage = () => {
         </div>
       </nav>
 
-      <section className="section-community">
-        <div className="icon">
-          <img
-            src={communityGift}
-            alt="my icon"
-            style={{ width: "350px", height: "350px" }}
-          />{" "}
-        </div>
-        <div className="content">
-          <h1 className="tittle-h1-section">Community</h1>
-          <p className="text">
-            A place where programmers can comment and provide feedback from
-            comments.
-          </p>
-        </div>
-      </section>
-
-      <section className="section-share">
-        <div className="content">
-          <h1 className="tittle-h1-section">Community</h1>
-          <p className="text">
-            A place where programmers can comment and provide feedback from
-            comments.
-          </p>
-        </div>
-        <div className="icon">
-          <img
-            src={shareImg}
-            alt="my icon"
-            style={{ width: "350px", height: "350px" }}
-          />{" "}
-        </div>
-      </section>
 
       <footer className="footer">
         <div className="icon-text">

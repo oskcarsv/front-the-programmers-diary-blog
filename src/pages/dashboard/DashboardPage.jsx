@@ -1,7 +1,7 @@
 import "./dashboardPage.css";
-import icon from "../assets/icon.svg";
-import communityGift from "../assets/people-gift.gif";
-import shareImg from "../assets/watch.svg";
+import icon from "../../assets/icon.svg";
+import communityGift from "../../assets/people-gift.gif";
+import shareImg from "../../assets/watch.svg";
 
 export const DashboardPage = () => {
   return (
