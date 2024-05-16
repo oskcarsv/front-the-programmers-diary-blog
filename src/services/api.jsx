@@ -28,3 +28,25 @@ export const getPost = async (id) => {
         }
     }
 };
+
+export const addPost = async (data) => {
+    try {
+        return await apiClient.post('/post/createPost', data);
+    } catch (e) {
+        return {
+            error: true,
+            e
+        }
+    }
+};
+
+export const deletePost = async (id) => {
+    try {
+        return await apiClient.delete(`/post/deletePost/${id}`);
+    } catch (e) {
+        return {
+            error: true,
+            e
+        }
+    }
+};
