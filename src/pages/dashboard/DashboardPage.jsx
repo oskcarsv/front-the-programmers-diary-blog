@@ -6,7 +6,7 @@ import { Footer } from "../../components/footer";
 
 export const DashboardPage = () => {
   return (
-    <>
+    <div className="container">
 
       <Nav />
 
@@ -46,6 +46,6 @@ export const DashboardPage = () => {
 
       <Footer />
 
-    </>
+    </div>
   );
 };

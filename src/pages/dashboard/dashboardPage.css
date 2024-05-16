@@ -26,3 +26,75 @@
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .tittle-h1 {
+    font-size: 24px;
+  }
+
+  .icon-text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    margin: 10px auto;
+  }
+
+  .section-community, .section-share {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .tittle-h1-section {
+    font-size: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .tittle-h1-footer {
+    font-size: 18px;
+  }
+
+  .icon-text-footer {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .text-footer {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .cards-container {
+    justify-content: center;
+    width: 100%;
+  }
+}
