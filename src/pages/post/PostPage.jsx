@@ -5,8 +5,6 @@ import { Post } from "../../components/Post";
 import "./postPage.css";
 import { Footer } from "../../components/footer";
 
-
-
 export const PostPage = () => {
   return (
     <div className="container">

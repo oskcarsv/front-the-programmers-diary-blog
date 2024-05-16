@@ -2,6 +2,7 @@ import { Nav } from "../../components/nav";
 import { Footer } from "../../components/footer";
 import { InfoPost } from "../../components/infoPost";
 import { useParams } from "react-router-dom";
+import "../../styles/nav.css";
 
 
 export const InfoPostPage = () => {
