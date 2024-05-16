@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AddPost } from "../../components/AddPost";
 import { Navbar } from "../../components/nav";
+import { Footer } from "../../components/footer";
 import "./addPost.css";
 
 export const AddPostPage = () => {
@@ -11,6 +12,7 @@ export const AddPostPage = () => {
       <div className="container">
         <Navbar />
         <AddPost loading={loading} setLoading={setLoading} />
+        <Footer />
       </div>
     </>
   );
