@@ -2,6 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useGetPostById } from "../shared/hooks";
 import { useEffect } from "react";
+import userIcon from "../assets/img/user.svg";
 import "../styles/InfoPost.css";
 
 export const InfoPost = ({ id }) => {
@@ -18,8 +19,9 @@ export const InfoPost = ({ id }) => {
     <div className="container">
       <h1 className="title">{post.title}</h1>
       <img className="image" src={post.img} alt={post.title} />
-      <div>
-        <p className="author">Author: {post.author}</p>
+      <div className="container-icon">
+        <img className="userIcon" src={userIcon} alt="userIcon" />
+        <p className="author">{post.author}</p>
       </div>
       <p className="content">{post.content}</p>
     </div>
