@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
-import "./postPage.css";
 import icon from "../../assets/img/icon.svg";
 import { Link } from "react-router-dom";
 import { Post } from "../../components/Post";
+import "./postPage.css";
+
 
 export const PostPage = () => {
   return (

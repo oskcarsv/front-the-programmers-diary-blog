@@ -1,6 +1,5 @@
 import useGetPost from "../shared/hooks/useGetPost";
 import { CardPosts } from "./CardPosts";
-// import { Link } from "react-router-dom";
 
 export const Post = () => {
   const { posts, loading, error } = useGetPost();
@@ -11,14 +10,12 @@ export const Post = () => {
   return (
     <section className="cards-container">
       {posts.map((post) => (
-        // <Link to={`/postContent/${post._id}`} className="card">
           <CardPosts
             key={post._id}
             title={post.title}
             subTitle={post.subTitle}
             img={post.img}
           />
-        // </Link>
       ))}
     </section>
   );
