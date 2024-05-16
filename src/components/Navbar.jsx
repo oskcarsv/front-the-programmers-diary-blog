@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import postsIcon from '../assets/img/postIcon.png';
 import homeIcon from '../assets/img/homeIcon.png';

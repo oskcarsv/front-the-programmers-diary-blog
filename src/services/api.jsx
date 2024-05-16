@@ -7,7 +7,7 @@ const apiClient = axios.create({
 
 export const getPublications = async () => {
     try {
-        return await apiClient.get('/post/gePost');
+        return await apiClient.get('/post/getPost');
     } catch (e) {
         return {
             error: true,

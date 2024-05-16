@@ -8,12 +8,11 @@ export const useAddPublication = () => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    const addPublication = async (title, subTitle, content, author, img) => {
+    const addPublication = async (title, content, author, img) => {
         setLoading(true);
 
         const response = await addPublicationRequiest({
             title,
-            subTitle,
             content,
             author,
             img

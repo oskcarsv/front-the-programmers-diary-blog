@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react';
 import useGetPublications from '../shared/hooks/useGetPublications';
 import { useDeletePublication } from '../shared/hooks'; 
@@ -14,7 +14,7 @@ export const Publication = () => {
         setLocalPublications(publications);
     }, [publications]);
 
-    if (loading) return <p>Cargando...</p>;
+    if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
     const handleDelete = async (id) => {
@@ -35,7 +35,6 @@ export const Publication = () => {
                         <CardPublications
                             key={publication._id}
                             title={publication.title}
-                            subTitle={publication.subTitle}
                             img={publication.img}
                         />
                     </Link>
