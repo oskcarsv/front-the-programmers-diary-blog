@@ -12,10 +12,10 @@ export const Navbar = () => {
                         Home Page
                     </li>
                 </Link>
-                <Link to="/publications" className='linkNavbar'>
+                <Link to="/posts" className='linkNavbar'>
                     <li>
                         <img src={postsIcon} />
-                        Publications
+                        Posts
                     </li>
                 </Link>
             </ul>

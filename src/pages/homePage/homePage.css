@@ -60,7 +60,7 @@ nav ul li img{
     transform: translateY(-10px);
 }
 
-.linkPublication{
+.linkPost{
     text-decoration: none;
     color: #000000;
 }
@@ -104,7 +104,7 @@ nav ul li img{
     position: relative;
 }
 
-.AddPublicationBtn {
+.AddPostBtn {
     background: linear-gradient(to right, #00ff99 20%, #0066ff 100%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -126,11 +126,11 @@ nav ul li img{
     color: #eff9f9;
 }
 
-.AddPublicationBtn:hover {
+.AddPostBtn:hover {
     transform: translateY(-5px);
 }
 
-.LinkPublication{
+.LinkPost{
     text-decoration: none;
     color: #000000;
 }

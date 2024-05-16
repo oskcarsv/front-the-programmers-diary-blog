@@ -1,14 +1,14 @@
 import { Navbar } from '../../components/Navbar';
-import { InfoPublication } from '../../components/InfoPublication';
+import { InfoPost } from '../../components/InfoPost';
 import { useParams } from 'react-router-dom';
 
-export const InfoPublicationPage = () => {
+export const InfoPostPage = () => {
     
     const params = useParams();
     return (
         <div>
             <Navbar />
-            <InfoPublication id={ params.id } />
+            <InfoPost id={ params.id } />
         </div>
     );
 };

@@ -11,7 +11,7 @@ article {
     width: 100%;
 }
 
-.divAddPublication {
+.divAddPost {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
@@ -108,7 +108,7 @@ article {
     transform: translateY(-5px);
 }
 
-.addPublicationContainer {
+.addPostContainer {
     position: relative;
 }
 

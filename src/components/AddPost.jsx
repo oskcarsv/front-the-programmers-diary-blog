@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Input } from "./Input";
-import { useAddPublication } from "../shared/hooks";
+import { useAddPost } from "../shared/hooks";
 
-export const AddPublication = () => {
-    const { addPublication, loading } = useAddPublication();
+export const AddPost = () => {
+    const { addPost, loading } = useAddPost();
 
     const [formState, setFormState] = useState({
         title: {
@@ -42,16 +42,16 @@ export const AddPublication = () => {
     //     let isValid = false;
     //     switch (field) {
     //         case 'title':
-    //             isValid = validatePublications(value);
+    //             isValid = validatePosts(value);
     //             break;
     //         case 'content':
-    //             isValid = validatePublications(value);
+    //             isValid = validatePosts(value);
     //             break;
     //         case 'author':
-    //             isValid = validatePublications(value);
+    //             isValid = validatePosts(value);
     //             break;
     //         case 'img':
-    //             isValid = validatePublications(value);
+    //             isValid = validatePosts(value);
     //             break;
     //         default:
     //             break;
@@ -68,7 +68,7 @@ export const AddPublication = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addPublication(
+        addPost(
             formState.title.value,
             formState.content.value,
             formState.author.value,
@@ -84,7 +84,7 @@ export const AddPublication = () => {
             <div className="design" />
             <div className="container">
                 <form onSubmit={handleSubmit}>
-                    <h1>Add Publication</h1>
+                    <h1>Add Post</h1>
                     <Input
                         field={'title'}
                         label="Title"
@@ -93,7 +93,7 @@ export const AddPublication = () => {
                         type="text"
                         // onBlurHandler={handleInputValidationOnBlur}
                     // showErrorMessage={formState.title.showError}
-                    // validationMessage={validatePublicationsMessage}
+                    // validationMessage={validatePostsMessage}
                         className="inputStyle"
                     />
                     <Input
@@ -104,7 +104,7 @@ export const AddPublication = () => {
                         type="text"
                         // onBlurHandler={handleInputValidationOnBlur}
                     // showErrorMessage={formState.content.showError}
-                    // validationMessage={validatePublicationsMessage}
+                    // validationMessage={validatePostsMessage}
                     />
                     <Input
                         field={'author'}
@@ -114,7 +114,7 @@ export const AddPublication = () => {
                         type="text"
                         // onBlurHandler={handleInputValidationOnBlur}
                     // showErrorMessage={formState.author.showError}
-                    // validationMessage={validatePublicationsMessage}
+                    // validationMessage={validatePostsMessage}
                     />
                     <Input
                         field={'img'}
@@ -124,10 +124,10 @@ export const AddPublication = () => {
                         type="text"
                         // onBlurHandler={handleInputValidationOnBlur}
                     // showErrorMessage={formState.img.showError}
-                    // validationMessage={validatePublicationsMessage}
+                    // validationMessage={validatePostsMessage}
                     />
                     <button type="submit">
-                        {loading ? 'Loading...' : 'Add Publication'}
+                        {loading ? 'Loading...' : 'Add Post'}
                     </button>
                 </form>
             </div>

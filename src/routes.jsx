@@ -1,13 +1,13 @@
 import { HomePage } from "./pages/homePage";
-import { Publications } from "./pages/publications";
-import { AddPublicationPage } from "./pages/addPublication/addPublication";
-import { InfoPublicationPage } from "./pages/infoPublication/InfoPublicationPage";
+import { Posts } from "./pages/posts";
+import { AddPostPage } from "./pages/addPost/addPost";
+import { InfoPostPage } from "./pages/infoPost/InfoPostPage";
 
 const routes = [
     { path: '/', element: <HomePage /> },
-    { path: '/publications', element: <Publications /> },
-    { path: '/addPublication', element: <AddPublicationPage /> },
-    { path: '/publicationContent/:id', element: <InfoPublicationPage /> }
+    { path: '/posts', element: <Posts /> },
+    { path: '/addPost', element: <AddPostPage /> },
+    { path: '/publicationContent/:id', element: <InfoPostPage /> }
 ];
 
 export default routes;

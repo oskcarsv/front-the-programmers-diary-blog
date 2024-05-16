@@ -1,12 +1,12 @@
 import { Navbar } from "../../components/Navbar";
-import { Publication } from "../../components/Publication";
+import { Post } from "../../components/Post";
 import "./homePage.css";
 
 export const HomePage = () => {
     return (
         <div>
             <Navbar />
-            <Publication />
+            <Post />
         </div>
     );
 };

@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { AddPublication } from "../../components/AddPublication";
+import { AddPost } from "../../components/AddPost";
 import { Navbar } from '../../components/Navbar';
-import './addPublication.css';
+import './addPost.css';
 
-export const AddPublicationPage = () => {
+export const AddPostPage = () => {
     const [loading, setLoading] = useState(false);
 
     return (
         <>
             <article>
                 <div className="navContainer">
-                    <Navbar className="divAddPublication" />
+                    <Navbar className="divAddPost" />
                 </div>
-                <AddPublication
+                <AddPost
                     loading={loading}
                     setLoading={setLoading}
                 />

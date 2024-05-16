@@ -5,7 +5,7 @@ const apiClient = axios.create({
     timeout: 10000,
 });
 
-export const getPublications = async () => {
+export const getPosts = async () => {
     try {
         return await apiClient.get('/post/getPost');
     } catch (e) {
@@ -16,7 +16,7 @@ export const getPublications = async () => {
     }
 };
 
-export const addPublication = async (data) => {
+export const addPost = async (data) => {
     try {
         return await apiClient.post('/post/createPost', data);
     } catch (e) {
@@ -27,7 +27,7 @@ export const addPublication = async (data) => {
     }
 };
 
-export const getPublication = async (id) => {
+export const getPost = async (id) => {
     try {
         return await apiClient.get(`/post/getPostById/${id}`);
     } catch (e) {
@@ -38,7 +38,7 @@ export const getPublication = async (id) => {
     }
 };
 
-export const deletePublication = async (id) => {
+export const deletePost = async (id) => {
     try {
         return await apiClient.delete(`/post/deletePost/${id}`);
     } catch (e) {

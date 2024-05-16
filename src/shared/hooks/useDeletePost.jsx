@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { deletePublication } from "../../services/api";
+import { deletePost } from "../../services/api";
 
-export const useDeletePublication = () => {
+export const useDeletePost = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const deletePublicationById = async (id) => {
+    const deletePostById = async (id) => {
         try {
             setLoading(true);
-            await deletePublication(id);
+            await deletePost(id);
             setLoading(false);
         } catch (error) {
             setError(error);
@@ -17,5 +17,5 @@ export const useDeletePublication = () => {
         }
     };
 
-    return { loading, error, deletePublicationById };
+    return { loading, error, deletePostById };
 };

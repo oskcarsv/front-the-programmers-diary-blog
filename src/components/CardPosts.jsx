@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export const CardPublications = ({
+export const CardPosts = ({
     title,
     img
 }) => {
