@@ -7,7 +7,7 @@ const routes = [
     { path: '/', element: <HomePage /> },
     { path: '/posts', element: <Posts /> },
     { path: '/addPost', element: <AddPostPage /> },
-    { path: '/publicationContent/:id', element: <InfoPostPage /> }
+    { path: '/postContent/:id', element: <InfoPostPage /> }
 ];
 
 export default routes;

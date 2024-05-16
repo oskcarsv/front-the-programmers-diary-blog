@@ -20,7 +20,7 @@ export const Post = () => {
     const handleDelete = async (id) => {
         try {
             await deletePostById(id);
-            setLocalPosts(localPosts.filter(publication => publication._id !== id));
+            setLocalPosts(localPosts.filter(post => post._id !== id));
         } catch (error) {
             console.error('Error al eliminar la publicación:', error);
         }
@@ -28,14 +28,14 @@ export const Post = () => {
 
     return (
         <section className='cards-container'>
-            {localPosts.map(publication => (
-                <div className="card" key={publication._id}>
-                    <button onClick={() => handleDelete(publication._id)} className="delete-button">X</button>
-                    <Link to={`/publicationContent/${publication._id}`} className='linkPost'>
+            {localPosts.map(post => (
+                <div className="card" key={post._id}>
+                    <button onClick={() => handleDelete(post._id)} className="delete-button">X</button>
+                    <Link to={`/postContent/${post._id}`} className='linkPost'>
                         <CardPosts
-                            key={publication._id}
-                            title={publication.title}
-                            img={publication.img}
+                            key={post._id}
+                            title={post.title}
+                            img={post.img}
                         />
                     </Link>
                 </div>

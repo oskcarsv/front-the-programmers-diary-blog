@@ -18,7 +18,7 @@ export const useAddPost = () => {
             img
         });
         if (response.error) {
-            toast.error('Error adding publication, probably one or more fields are empty or invalid');
+            toast.error('Error adding post, probably one or more fields are empty or invalid');
         } else {
             toast.success('Post added successfully');
             navigate('/posts');
