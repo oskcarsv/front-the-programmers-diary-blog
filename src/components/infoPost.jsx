@@ -1,34 +1,38 @@
-import { useGetPublicationById } from '../shared/hooks';
-import { useEffect } from 'react';
-import '../styles/InfoPublication.css';
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
+import { useGetPostById } from "../shared/hooks";
+import { useEffect } from "react";
+import "../styles/InfoPost.css";
 
-export const InfoPublication = ({ id }) => {
-    const { publications, loading, error, fetchPublicationById } = useGetPublicationById(id);
-    console.log("this is the id " + id);
-    useEffect(() => {
-        fetchPublicationById();
-    }, [id]);
+export const InfoPost = ({ id }) => {
+  const { posts, loading, error, fetchPostById } = useGetPostById(id);
+  console.log("this is the id " + id);
+  useEffect(() => {
+    fetchPostById();
+  }, [id]);
 
-    if (loading) return <p className="loading">Cargando...</p>;
-    if (error) return <p className="error">Error: {error.message}</p>;
+  if (loading) return <p className="loading">Loading...</p>;
+  if (error) return <p className="error">Error: {error.message}</p>;
 
-    const formatDate = (dateString) => {
-        const date = new Date(dateString);
-        const year = date.getFullYear();
-        const month = ('0' + (date.getMonth() + 1)).slice(-2); // Los meses en JavaScript comienzan desde 0
-        const day = ('0' + date.getDate()).slice(-2);
-        return `${year}-${month}-${day}`;
-    };
-    return (
-        <div className="container">
-            <h1 className="title">{publications.title}</h1>
-            <h2 className="subtitle">{publications.subTitle}</h2>
-            <img className="image" src={publications.img} alt={publications.title} />
-            <div>
-                <p className="author">Autor: {publications.author}</p>
-                <p className="date">Fecha de publicación: {formatDate(publications.createdAt)}</p>
-            </div>
-            <p className='content'>{publications.content}</p>
-        </div>
-    );
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const year = date.getFullYear();
+    const month = ("0" + (date.getMonth() + 1)).slice(-2);
+    return `${year}-${month}-${day}`;
+  };
+
+  return (
+    <div className="container">
+      <h1 className="title">{posts.title}</h1>
+      <img className="image" src={posts.img} alt={posts.title} />
+      <div>
+        <p className="author">Author: {posts.author}</p>
+        <p className="date">
+          Date: {formatDate(posts.createdAt)}
+        </p>
+      </div>
+      <p className="content">{posts.content}</p>
+    </div>
+  );
 };
