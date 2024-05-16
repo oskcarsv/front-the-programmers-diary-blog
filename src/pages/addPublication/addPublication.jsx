@@ -8,7 +8,6 @@ export const AddPublicationPage = () => {
 
     return (
         <>
-
             <article>
                 <div className="navContainer">
                     <Navbar className="divAddPublication" />

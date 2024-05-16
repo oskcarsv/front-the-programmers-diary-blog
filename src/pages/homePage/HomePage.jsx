@@ -7,7 +7,6 @@ export const HomePage = () => {
         <div>
             <Navbar />
             <Publication />
-
         </div>
     );
 };

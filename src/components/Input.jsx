@@ -39,12 +39,6 @@ export const Input = ({
             onBlur={handleInputBlur}
           />
         )}
-        {/* <input
-                    type={type}
-                    value={value}
-                    onChange={handleValueChange}
-                    onBlur={handleInputBlur}
-                /> */}
       </section>
     </>
   );
