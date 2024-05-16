@@ -3,6 +3,8 @@ import icon from "../../assets/img/icon.svg";
 import { Link } from "react-router-dom";
 import { Post } from "../../components/Post";
 import "./postPage.css";
+import { Footer } from "../../components/footer";
+
 
 
 export const PostPage = () => {
@@ -32,24 +34,8 @@ export const PostPage = () => {
         <Post />
       </section>
 
-      {/* <footer className="footer">
-        <div className="icon-text">
-          <div className="icon">
-            <img
-              src={icon}
-              alt="my icon"
-              style={{ width: "35px", height: "35px" }}
-            />{" "}
-          </div>
-          <div className="text-footer">
-            <h1 className="tittle-h1-footer">The programmers diary</h1>
-          </div>
-        </div>
+      <Footer />  
 
-        <div className="copyright-text">
-          <p className="text-footer">©The programmers diary 2024</p>
-        </div>
-      </footer> */}
     </div>
   );
 };
