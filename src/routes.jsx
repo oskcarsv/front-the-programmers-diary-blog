@@ -1,11 +1,13 @@
-import { DashboardPage } from "./pages/dashboard/DashboardPage"
-import { PostPage } from "./pages/post/PostPage";
-import { InfoPostPage } from "./pages/infoPost/InfoPage";
+import { HomePage } from "./pages/homePage";
+import { Publications } from "./pages/publications";
+import { AddPublicationPage } from "./pages/addPublication/addPublication";
+import { InfoPublicationPage } from "./pages/infoPublication/InfoPublicationPage";
 
 const routes = [
-    {path: '/*', element: <DashboardPage />},
-    {path: '/post', element: <PostPage />},
-    {path: '/postContent/:id', element: <InfoPostPage />}
+    { path: '/', element: <HomePage /> },
+    { path: '/publications', element: <Publications /> },
+    { path: '/addPublication', element: <AddPublicationPage /> },
+    { path: '/publicationContent/:id', element: <InfoPublicationPage /> }
 ];
 
 export default routes;

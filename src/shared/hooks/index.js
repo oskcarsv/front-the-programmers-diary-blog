@@ -1,3 +1,3 @@
-export { useGetPostById } from "./useGetPostById.jsx";
-export { useAddPost } from "./useAddPost.jsx";
-export { useDeletePost } from "./useDeletePost.jsx";
+export { useAddPublication } from './useAddPublication';
+export { useGetPublicationById } from './useGetPublicationById';
+export { useDeletePublication } from './useDeletePublication';  
