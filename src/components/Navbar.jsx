@@ -1,23 +1,28 @@
 import { Link } from "react-router-dom";
-import postsIcon from "../assets/img/postIcon.png";
-import homeIcon from "../assets/img/homeIcon.png";
+
+import icon from "../assets/img/icon.svg";
+import "../styles/navbar.css";
+
 export const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <Link to="/" className="linkNavbar">
-          <li>
-            <img src={homeIcon} />
-            Home Page
-          </li>
-        </Link>
-        <Link to="/posts" className="linkNavbar">
-          <li>
-            <img src={postsIcon} />
-            Posts
-          </li>
-        </Link>
-      </ul>
+    <nav className="nav">
+      <div className="icon-text">
+        <img
+          className="icon"
+          src={icon}
+          style={{ width: "90px", height: "90px" }}
+        />
+        <h1 className="tittle-h1">Programmers Diary</h1>
+      </div>
+
+      <div className="buttons">
+        <div className="button">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="button">
+          <Link to="/posts">Posts</Link>
+        </div>
+      </div>
     </nav>
   );
 };

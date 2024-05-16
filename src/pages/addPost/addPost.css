@@ -1,4 +1,4 @@
-article {
+/* article {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -162,4 +162,4 @@ article {
     transition: background-size 0.3s ease;
     resize: vertical;
     max-height: 100px;
-}
+} */

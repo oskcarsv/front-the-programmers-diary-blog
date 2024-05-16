@@ -1,6 +1,7 @@
 import { Navbar } from "../../components/Navbar";
 import { Link } from "react-router-dom";
 import { Post } from "../../components/Post";
+import { Footer } from "../../components/Footer";
 export const Posts = () => {
   return (
     <>
@@ -9,6 +10,7 @@ export const Posts = () => {
       <Link to="/addPost" className="AddPostBtn">
         Add Post
       </Link>
+      <Footer />
     </>
   );
 };
