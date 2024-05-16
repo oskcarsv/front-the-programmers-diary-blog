@@ -13,7 +13,6 @@ export const Post = () => {
           <CardPosts
             key={post._id}
             title={post.title}
-            subTitle={post.subTitle}
             img={post.img}
           />
       ))}
