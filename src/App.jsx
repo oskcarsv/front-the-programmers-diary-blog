@@ -1,27 +1,14 @@
-import {
-  BrowserRouter as Router,
-  useRoutes,
-} from 'react-router-dom';
-import { DashboardPage } from "./pages/dashboard/DashboardPage"
-import { PostPage } from "./pages/post/PostPage";
+import { useRoutes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import routes from "./routes.jsx";
 
+export const App = () => {
+  let element = useRoutes(routes);
 
-
-function AppRoutes() {
-  const routes = useRoutes(
-    [
-      { path: '/', element: <DashboardPage /> },
-      { path: '/post', element: <PostPage /> },
-    ]
-  )
-  return routes;
-}
-function App() {
   return (
-    <Router>
-      <AppRoutes />
-    </Router>
-  )
+    <>
+      {element}
+      <Toaster position="top-center" reverseOrder={false} />
+    </>
+  );
 }
-
-export default App

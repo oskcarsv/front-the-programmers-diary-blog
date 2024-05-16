@@ -30,9 +30,10 @@ export const PostPage = () => {
 
       <section className="section-post">
         
+        
       </section>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         <div className="icon-text">
           <div className="icon">
             <img
@@ -49,7 +50,7 @@ export const PostPage = () => {
         <div className="copyright-text">
           <p className="text-footer">©The programmers diary 2024</p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
