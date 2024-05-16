@@ -4,6 +4,7 @@ import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
 import "./addPost.css";
 import "../homePage/homePage.css";
+import "../../styles/variables.css";
 
 export const AddPostPage = () => {
   const [loading, setLoading] = useState(false);

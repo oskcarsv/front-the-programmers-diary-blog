@@ -10,11 +10,10 @@ export const Content = () => {
     <main>
       <section className="s-welcome">
         <div className="welcome-text">
-          <h1>Welcome to Contacly</h1>
+          <h1>Welcome</h1>
           <p className="p-welcome">
-            Contacly is a simple contact management system that allows you to
-            manage your contacts with ease. You can add, edit, delete and view
-            your contacts.
+            Programmers Diary is a simple blog system that allows you to
+            manage your repositories with ease. You can write comments and see projects.
           </p>
         </div>
         <div className="welcome-img">
@@ -33,12 +32,11 @@ export const Content = () => {
             />
           </div>
           <div className="todo-text">
-            <h1>Todo list</h1>
+            <h1>Posts</h1>
             <p className="p-todo">
-              A to-do list on a webpage is a feature that allows users to create
-              and manage a list of tasks. It typically consists of a text field
-              where users can enter the task name, a checkbox to mark the task
-              as completed.
+              A posts list on a webpage is a feature that allows users to create
+              and manage a posts lists. It typically consists of a text field
+              where users can enter the post name.
             </p>
           </div>
         </div>
