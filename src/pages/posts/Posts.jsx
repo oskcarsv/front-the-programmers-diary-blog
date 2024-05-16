@@ -8,7 +8,7 @@ export const Posts = () => {
       <Navbar />
       <Post />
       <Link to="/addPost" className="AddPostBtn">
-        Add Post
+        +
       </Link>
       <Footer />
     </>
