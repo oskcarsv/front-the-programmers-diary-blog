@@ -1,0 +1,1 @@
+export { useGetPostById } from "./useGetPostById.jsx";

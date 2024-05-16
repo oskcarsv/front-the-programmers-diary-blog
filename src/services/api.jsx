@@ -7,7 +7,7 @@ const apiClient = axios.create({
   timeout: 5000,
 });
 
-export const getPost = async () => {
+export const getPosts = async () => {
     try {
         return await apiClient.get('/post');
     } catch (e) {
@@ -17,3 +17,14 @@ export const getPost = async () => {
         }
     }
 }
+
+export const getPost = async (id) => {
+    try {
+        return await apiClient.get(`/post/getPostById/${id}`);
+    } catch (e) {
+        return {
+            error: true,
+            e
+        }
+    }
+};
