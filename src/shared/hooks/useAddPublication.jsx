@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"; 
-import { addPost as addPostRequest } from '../../services'
+import { addPublication as addPublicationRequiest } from '../../services'
 import toast from 'react-hot-toast';
 
 
-export const useAddPost = () => {
+export const useAddPublication = () => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    const addPost = async (title, content, author, img) => {
+    const addPublication = async (title, subTitle, content, author, img) => {
         setLoading(true);
 
-        const response = await addPostRequest({
+        const response = await addPublicationRequiest({
             title,
+            subTitle,
             content,
             author,
             img
@@ -21,10 +22,10 @@ export const useAddPost = () => {
             toast.error('Error adding publication, probably one or more fields are empty or invalid');
         } else {
             toast.success('Publication added successfully');
-            navigate('/posts');
+            navigate('/publications');
         }
         setLoading(false);
     };
 
-    return { addPost, loading };
+    return { addPublication, loading };
 };

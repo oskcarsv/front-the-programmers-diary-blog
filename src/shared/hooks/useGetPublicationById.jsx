@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import { getPost } from '../../services/api';
+import { getPublication } from '../../services/api';
 
-export const useGetPostById = (id) => {
-    const [posts, setPost] = useState({});
+export const useGetPublicationById = (id) => {
+    const [publications, setPublication] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const fetchPostById = async () => {
+    const fetchPublicationById = async () => {
         try {
-            const { data } = await getPost(id);
+            const { data } = await getPublication(id);
             console.log(data);
-            setPost(data.posts);
+            setPublication(data.publications);
             setLoading(false);
         } catch (e) {
             setError(e);
@@ -18,5 +18,5 @@ export const useGetPostById = (id) => {
         }
     };
 
-    return { posts, loading, error, fetchPostById };
+    return { publications, loading, error, fetchPublicationById };
 };
