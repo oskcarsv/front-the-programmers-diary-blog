@@ -2,8 +2,7 @@
 import "./postPage.css";
 import icon from "../../assets/img/icon.svg";
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from "react";
-import { getPost } from "../../services/api";
+import { Post } from "../../components/Post";
 
 export const PostPage = () => {
   return (
@@ -29,8 +28,7 @@ export const PostPage = () => {
       </nav>
 
       <section className="section-post">
-        
-        
+        <Post />
       </section>
 
       {/* <footer className="footer">
