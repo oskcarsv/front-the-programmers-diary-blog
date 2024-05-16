@@ -1,3 +1,6 @@
+* {
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -35,7 +38,8 @@
 }
 
 .cards-container {
-    margin: 5% 3% 0 6%;
+    background-color: var(--beige);
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -101,17 +105,16 @@ h2 {
 
 .delete-button {
     background: #db5e5e;
-    width: 30px; /* Cambia el ancho a un valor fijo */
-    height: 30px; /* Cambia la altura a un valor fijo */
-    font-size: 15px;
-    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%; 
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10px; /* Ajusta la posición superior */
+    top: 10px; 
     right: 10px;
     transition: all 0.6s ease-out;
     color: #eff9f9;
@@ -119,5 +122,5 @@ h2 {
 
 .delete-button:hover {
     background: #900808;
-    transform: scale(1.1); /* Hace que el botón se agrande un poco al pasar el mouse */
+    transform: scale(1.1);
 }

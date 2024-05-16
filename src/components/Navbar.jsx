@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
-import icon from "../assets/img/icon.svg";
+import icon from "../assets/img/logo.svg";
 import "../styles/navbar.css";
+import "../styles/variables.css";
 
 export const Navbar = () => {
   return (

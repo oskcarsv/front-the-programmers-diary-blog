@@ -1,5 +1,6 @@
-import icon from "../assets/img/icon.svg"
+import icon from "../assets/img/logo.svg"
 import "../styles/footer.css"
+import "../styles/variables.css";
 
 export const Footer = () => {
   return (
