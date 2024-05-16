@@ -4,10 +4,10 @@ import { AddPostPage } from "./pages/addPost/addPost";
 import { InfoPostPage } from "./pages/infoPost/InfoPostPage";
 
 const routes = [
-    { path: '/', element: <HomePage /> },
-    { path: '/posts', element: <Posts /> },
-    { path: '/addPost', element: <AddPostPage /> },
-    { path: '/postContent/:id', element: <InfoPostPage /> }
+  { path: "/", element: <HomePage /> },
+  { path: "/posts", element: <Posts /> },
+  { path: "/addPost", element: <AddPostPage /> },
+  { path: "/postContent/:id", element: <InfoPostPage /> },
 ];
 
 export default routes;

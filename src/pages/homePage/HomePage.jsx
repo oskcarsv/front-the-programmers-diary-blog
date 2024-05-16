@@ -3,10 +3,10 @@ import { Post } from "../../components/Post";
 import "./homePage.css";
 
 export const HomePage = () => {
-    return (
-        <div>
-            <Navbar />
-            <Post />
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Post />
+    </div>
+  );
 };
