@@ -1,5 +1,7 @@
 import icon from "../assets/img/icon.svg";
 import { Link } from 'react-router-dom';
+import "../styles/nav.css"
+
 
 export const Nav = () => {
   return (
