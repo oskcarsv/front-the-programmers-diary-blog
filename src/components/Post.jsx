@@ -30,15 +30,15 @@ export const Post = () => {
     <section className="cards-container">
       {localPosts.map((post) => (
         <div className="card" key={post._id}>
+          <Link to={`/postContent/${post._id}`} className="linkPost">
+            <CardPosts key={post._id} title={post.title} img={post.img} />
+          </Link>
           <button
             onClick={() => handleDelete(post._id)}
             className="delete-button"
           >
             X
           </button>
-          <Link to={`/postContent/${post._id}`} className="linkPost">
-            <CardPosts key={post._id} title={post.title} img={post.img} />
-          </Link>
         </div>
       ))}
     </section>

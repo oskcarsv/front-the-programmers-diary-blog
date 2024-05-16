@@ -17,10 +17,10 @@ export const Navbar = () => {
 
       <div className="buttons">
         <div className="button">
-          <Link to="/">Home</Link>
+          <Link to="/" className="link">Home</Link>
         </div>
         <div className="button">
-          <Link to="/posts">Posts</Link>
+          <Link to="/posts" className="link">Posts</Link>
         </div>
       </div>
     </nav>

@@ -1,38 +1,37 @@
-
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: #f0f7f7;
-    width: 15%;
+    width: 33%;
     border: 1px solid #64626237;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin: 10px;
-    padding: 20px;
     border-radius: 10px;
     transition: 0.5s ease-in;
     cursor: pointer;
     text-decoration: none;
     color: #000000;
     position: relative;
+    background-color: #E1F0DA;
 }
+
 .card:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     transform: translateY(-10px);
 }
 
-.linkPost{
+.linkPost {
     text-decoration: none;
     color: #000000;
 }
 
 .card img {
     position: relative;
-    width: 60%;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin: 10px 0;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
 }
 
 .cards-container {
@@ -42,10 +41,9 @@
     justify-content: start;
     flex-wrap: wrap;
     transition: all 0.1s ease-in;
-    background-color: #f0f7f7;
 }
 
-.card-content .btnDelete{
+.card-content .btnDelete {
     width: 15%;
     position: absolute;
     top: 0;
@@ -56,7 +54,7 @@
     text-align: center;
 }
 
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,45 +80,44 @@
     border: none;
     transition: all 0.6s ease-out;
     text-decoration: none;
-    /* color: #eff9f9; */
 }
 
 .AddPostBtn:hover {
     transform: translateY(-5px);
 }
 
-.LinkPost{
+.LinkPost {
     text-decoration: none;
     color: #000000;
 }
 
-h2{
+h2 {
     text-align: center;
+    font-family: "League Spartan-Bold", Helvetica;
+    font-size: 20px;
+    letter-spacing: 2px;
+
 }
 
-.delete-button{
-    background: #ff0000;
-    background-size: 200% 100%;
-    background-position: right bottom;
-    width: 10%;
-    height: 9%;
+.delete-button {
+    background: #db5e5e;
+    width: 30px; /* Cambia el ancho a un valor fijo */
+    height: 30px; /* Cambia la altura a un valor fijo */
     font-size: 15px;
-    border-radius: 5px;
-    border-color: none;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    border: none;
-    transition: all 0.6s ease-out;
-    text-decoration: none;
-    color: #eff9f9;
     position: absolute;
-    top: 0;
+    top: 10px; /* Ajusta la posición superior */
     right: 10px;
+    transition: all 0.6s ease-out;
+    color: #eff9f9;
 }
 
 .delete-button:hover {
     background: #900808;
+    transform: scale(1.1); /* Hace que el botón se agrande un poco al pasar el mouse */
 }
