@@ -12,8 +12,9 @@ export const Content = () => {
         <div className="welcome-text">
           <h1>Welcome</h1>
           <p className="p-welcome">
-            Programmers Diary is a simple blog system that allows you to
-            manage your repositories with ease. You can write comments and see projects.
+            Programmers Diary is a simple blog system that allows you to manage
+            your repositories with ease. You can write comments and see
+            projects.
           </p>
         </div>
         <div className="welcome-img">
@@ -24,12 +25,7 @@ export const Content = () => {
       <section className="s-todo-list">
         <div className="container-todo">
           <div className="todo-img">
-            <img
-              src={todoGift}
-              alt="welcome"
-              height="600px"
-              width="700px"
-            />
+            <img src={todoGift} alt="welcome" height="600px" width="700px" />
           </div>
           <div className="todo-text">
             <h1>Posts</h1>
@@ -48,22 +44,11 @@ export const Content = () => {
             <h1 className="">Avaible on</h1>
           </div>
           <div className="avaible-img">
-            <img
-              src={pc}
-              alt="welcome"
-              height="250px"
-              width="250px"
-            />
-            <img
-              src={phone}
-              alt="welcome"
-              height="250px"
-              width="100px"
-            />
+            <img src={pc} alt="welcome" height="250px" width="250px" />
+            <img src={phone} alt="welcome" height="250px" width="100px" />
           </div>
         </div>
       </section>
-
     </main>
   );
 };

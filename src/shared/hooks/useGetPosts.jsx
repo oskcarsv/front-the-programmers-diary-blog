@@ -9,7 +9,7 @@ const useGetPosts = () => {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          "http://127.0.0.1:3000/programmers-diary/v1/post/getPost"
+          "http://127.0.0.1:3000/programmers-diary/v1/post/getPost",
         );
         if (!response.ok) {
           throw new Error("Failed to fetch posts");

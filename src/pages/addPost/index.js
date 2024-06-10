@@ -1,1 +1,1 @@
-export { AddPostPage } from './addPost.js'
+export { AddPostPage } from "./addPost.js";

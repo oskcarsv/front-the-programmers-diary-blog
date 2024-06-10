@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Input } from "./Input";
 import { useAddPost } from "../shared/hooks";
 import "../pages/addPost/addPost.css";
-import "../styles/variables.css"
+import "../styles/variables.css";
 
 export const AddPost = () => {
   const { addPost, loading } = useAddPost();
@@ -46,7 +46,7 @@ export const AddPost = () => {
       formState.title.value,
       formState.content.value,
       formState.author.value,
-      formState.img.value
+      formState.img.value,
     );
   };
 
@@ -64,13 +64,13 @@ export const AddPost = () => {
             type="text"
             className="inputStyle"
           />
-          <Input 
+          <Input
             field={"content"}
             label="Content"
             value={formState.content.value}
             onChangeHandler={handleInputValueChange}
             type="text"
-            className = "inputStyle"
+            className="inputStyle"
           />
           <Input
             field={"author"}
@@ -78,7 +78,7 @@ export const AddPost = () => {
             value={formState.author.value}
             onChangeHandler={handleInputValueChange}
             type="text"
-            className = "inputStyle"
+            className="inputStyle"
           />
           <Input
             field={"img"}
@@ -86,9 +86,11 @@ export const AddPost = () => {
             value={formState.img.value}
             onChangeHandler={handleInputValueChange}
             type="text"
-            className = "inputStyle"
+            className="inputStyle"
           />
-          <button type="submit" className="button-form">{loading ? "Loading..." : "Add Post"}</button>
+          <button type="submit" className="button-form">
+            {loading ? "Loading..." : "Add Post"}
+          </button>
         </form>
       </div>
     </>
