@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;500;600&family=Prompt:wght@300;500&display=swap");
+
+:root {
+  /*Colors*/
+  --sky-blue: #c9d7dd;
+  --beige: #fffbf5;
+  --green: #d7e5ca;
+  --yellow: #f9f3cc;
+  --blue: #27374d;
+
+  /*Fonts*/
+  --primary-font: "Prompt", sans-serif;
+  --secondary-font: "Hind", sans-serif;
+  --text-font: "Regular", sans-serif;
+}
